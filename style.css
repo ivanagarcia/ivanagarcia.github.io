@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	font-family: 'Open Sans', sans-serif;
+        
+}
+
+.overall{
+    width: 1024px;
+/*    background-color: bisque;*/ 
+    margin-left: auto;
+}
+	width: 1024px;
+	background-color: #b2b2ff;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    color:#ffffff;
+	
+}
+
+.box1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    /*background-color: yellow;*/
+
+}
+
+.box2{
+
+    width: 600px;
+    float: left;
+    height: 255px;
+    /*background-color: darkseagreen;*/
+
+}
+
+.box3{
+
+    width: 424px;
+    float: right;
+    height: 255px;
+    background-image: url("images/me.jpg");
+}
+
+.box4{
+    /*background-color: antiquewhite;*/
+    float: right;
+    height: 335px;
+}
+
+.box5{
+    /*background-color: aquamarine;*/
+    
+}
+
+.box6{
+    /*background-color:bisque;*/
+}
+
+.box7{
+    /*background-color:greenyellow;*/
+    width: 560px;
+    height:400px;
+    float: left;
+}
+
+.box8{
+    width: 434px;
+    float: right;
+    /*background-color: azure;*/
+    height: 55px;
+    margin-top: 346px;
+    margin-left: 25px;
+    
+}
+
+.box9{
+    background-color: bisque;
+}
+
+/* unvisited link */
+a:link{
+    color: hotpink;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #997379;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffd9df;
+    text-decoration: none;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+	color: #b2b2ff;
+    padding-top:5px;
+    font-family: 'Yeseva One', cursive;
+    font-kerning: -5px;
+    font-size: 20px;
+}
+
+h4{
+    text-align: center;
+}
+
+p{
+	width: 600px;
+    font-family: 'Open Sans', sans-serif;
+}
