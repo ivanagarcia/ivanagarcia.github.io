@@ -46,31 +46,103 @@ table {
 	border-spacing: 0;
 }
 
+.empty{
+    background-color: antiquewhite;
+}
 
-.topnav{
+/*.topnavpics img{
+    display:inline-block;
+    margin:0 auto;
+    text-align: center;
+
+}*/
+
+.topnavpics{
     width:84.2%;
+    height: 80px;
     margin-left: auto;
     margin-right: auto;
     background-color: #34356f;
-    display: inline-block;    
+    display: block;    
+}
+
+.topnavpics a{
+    text-align: center;
+}
+
+.topnavpics ul{
+    list-style-type: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    text-align: center;
+}
+
+.topnavpics li{
+    list-style: none;
+    display: inline-block;
+    padding: 2px;
+    margin:0px 59px 0px 59px;
+ 
+}
+
+.topnavpics li a{ 
+    float: left; 
+    margin: 0px 7px 0px 6px;
+    padding: 10px 6px 0px 6px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.topnav2{
+    width:84.2%;
+    height: 31px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #34356f;
+    display: block;    
+}
+
+.topnav2 a{
+    text-align: center;
+}
+
+.topnav2 li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px 57px 0px 57px;
+ 
+}
+
+.topnav2 ul{
+    list-style-type: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    text-align: center;
 }
 
 ul a{
 }
 
-li a{
-    font-size: 35px;
+.topnav2 li a{
+    font-size: 20px;
     font-family: 'Roboto Mono', monospace;
     float: left;
-    width: 190px;
     margin: 0px 6px 0px 6px;
-    padding: 120px 6px 20px 6px;
+    padding: 0px 6px 5px 6px;
     text-align:center;
     color: #dedee7;
     text-decoration: none;
     border-bottom: 5px solid;
     border-bottom-color: #34356f;
-    line-height: 0px;
+    display: flex;
+    justify-content: center;
 }
 
 li a:link{
@@ -84,10 +156,10 @@ li a:visited{
     
 }
 
-li a:hover{
+.topnav2 li a:hover{
     border-bottom: 5px solid;
     border-bottom-color: #d96c61;
-    line-height: 0px;
+    /*line-height: 0px;*/
     display: block;
 }
 
