@@ -68,6 +68,8 @@ a.navwords{
     text-decoration: none; 
 }
 
+
+
 a.navwords:hover{
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
