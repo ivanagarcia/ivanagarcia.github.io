@@ -41,27 +41,18 @@
         
         <div class="content">
             <div class="gallery">
-                <div class = "picture">
-                    <div id="fadebox">
-                            
-
-                        <!-- all the images that are included in the gallery. the first one is opaque, while the others aren't there visbily.-->
-                        <div id="fade">
-                            <img class='slidei opaque' id="#displayed" src="images/gallery/cosmetics/1together.jpg" width="695.761px" height="470px" />
-                            <img class='slidei' src="images/gallery/cosmetics/2back.jpg" width="695.761px" height="470px" />
-                            <img class='slidei' src="images/gallery/cosmetics/3front.jpg" width="695.761px" height="470px" />
-                            <img class='slidei' src="images/gallery/cosmetics/4backWords.jpg" width="695.761px" height="470px" />
-                            <img class='slidei' src="images/gallery/cosmetics/5branding.jpg" width="695.761px" height="470px" />
-                        
-                        </div>
-                    </div>
+            
+                <div class="previews"> 
+                    <a href="#" class="selected" data-full="images/gallery/cosmetics/1together.jpg"><img class="small" src="images/gallery/cosmetics/1together-small.jpg"/></a> 
+                    <a href="#" data-full="images/gallery/cosmetics/2back.jpg"><img class="small" src="images/gallery/cosmetics/2back-small.jpg" /></a> 
+                    <a href="#" data-full="images/gallery/cosmetics/3front.jpg"><img class="small" src="images/gallery/cosmetics/3front-small.jpg"/></a> 
+                    <a href="#" data-full="images/gallery/cosmetics/4backWords.jpg"><img class="small" src="images/gallery/cosmetics/4backWords-small.jpg" /></a> 
+                    <a href="#" data-full="images/gallery/cosmetics/5branding.jpg"><img class="small" src="images/gallery/cosmetics/5branding-small.jpg" /></a> 
                 </div>
-                
-                <!--to navigate through the different images, using arrows-->
-                
-                <div class="arrows">
-                    <img id="left_arrow" src="images/leftArrow.svg" width="25px" height="40px" />
-                    <img id="right_arrow" src="images/rightArrow.svg" width="25px" height="40px" />
+
+                <div class="full"> 
+                    <!-- first image is viewable to start --> 
+                    <img src="images/gallery/cosmetics/1together.jpg" /> 
                 </div>
                 
             </div>
@@ -73,6 +64,41 @@
 
                 <p>The word “Kimi” is a Maori word, meaning to seek, or to find, which I linked to the pursuit to perfection. Women are conditioned to always better themselves, physically, to be deemed worthy.</p>
             </div>
+            
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+                <script src="fancybox/jquery.fancybox.js?v=2.1.4"></script> 
+                <script>
+                  $(document).ready(function(){
+                    $('a').click(function(){
+                      var largeImage = $(this).attr('data-full');
+                      $('.selected').removeClass();
+                      $(this).addClass('selected');
+                      $('.full img').hide();
+                      $('.full img').attr('src', largeImage);
+                      $('.full img').fadeIn();
+
+
+                    }); // closing the listening on a click
+                    $('.full img').on('click', function(){
+                      var modalImage = $(this).attr('src');
+                      $.fancybox.open(modalImage);
+                    });
+                  }); //closing our doc ready
+                  </script>
+                <script type="text/javascript">
+
+                  var _gaq = _gaq || [];
+                  _gaq.push(['_setAccount', 'UA-36251023-1']);
+                  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                  _gaq.push(['_trackPageview']);
+
+                  (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                  })();
+
+                </script>
         </div>    
           
         
