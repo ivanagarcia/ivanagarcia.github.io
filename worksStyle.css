@@ -154,6 +154,30 @@ p{
     float: left;
 }
 
+.workPics{
+    /*background-color: red;*/
+    width: 1222px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.galleryPic{
+    margin-left:12px;
+    margin-bottom: 5px;
+    opacity: 1;
+    border-bottom: 5px solid #fff8dc;
+}
+
+.galleryPic:hover{
+    opacity: 1;
+    border-bottom: 5px solid #d4584c; 
+}
+
+.small{
+    width:89px;
+    height: 63px;
+}
+
 .gallery .previews, .gallery .full, .gallery .desc {
 float: left;
 margin-right: 10px;
@@ -176,7 +200,7 @@ width:750px;
 border-bottom: 5px solid #fff8dc;
 }
 .previews a:hover,  .previews a.selected {
-border-bottom: 5px solid #e4584c;
+border-bottom: 5px solid #d4584c;
 }
 .gallery .full img:hover {
 cursor: pointer;
