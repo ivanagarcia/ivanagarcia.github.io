@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <title>ivana garcia</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Vidaloka" rel="stylesheet">    
 
 	</head>
@@ -35,87 +36,41 @@
         <h1>ivana garcia</h1>
         </div>
         
-    <!--<div class= "overall">
-	<div class="container">
-	<h1>Ivana Garcia</h1>
-	<h2>19 y/o | New Zealand</h2>
-	<h4>Major: Graphic Design</h4>
-    </div>
-        
-        
-    <div class="box1">
-	<h3>Anchors:</h3>
-	<ul>
-		<li><a href="#fq">About me</a></li>
-		<li><a href="#d">My Dog</a></li>
-		<li><a href="#cw">Websites</a></li>
-		<li><a href="#fm">Movies</a></li>
-		<li><a href="#fa">Artist</a></li>
-		<li><a href="#bq">More Info</a></li>
-	</ul>
-    </div>
-        
-	<div class="box2">
-	
-	<h3  id="fq">About me:</h3>
-	<p>My name is Ivana and I'm from Auckland, New Zealand. I live with my parents and 3 siblings. I am the second child, and I have two sisters and one brother. I also have a toy poodle puppy named Cinnamon. She is 10 months old and a bundle of joy :-) </p>
-    <p> I am currently an exchange student, studying in Champlain College for the fall semester in 2017. I am a second year student, and I am graduating in New Zealand at the end of next year.</p>
-    </div>
-        
-    <div class="box3">
+        <div class="container">
+        <div id="slides">
+            <img src="images/homepage/1cosmetics.jpg">
+            <img src="images/homepage/2happyTrails.png">
+            <img src="images/homepage/3boredomBay.png">
+            <img src="images/homepage/4houseTimeline.jpg">
+            <img src="images/homepage/5tissues.jpg">
+            <img src="images/homepage/6publication.jpg">
+         
+        </div>
+    </div> 
+    
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
 
-    </div>
-	
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });
+  </script>
         
-    <div class="box4">
-	<h3 id="d">My Dog: Cinnamon</h3>
-        
-    
-    <img src="images/IMG_4447.jpg" /><img src="images/pic2.jpg" alt=""/><img src="images/pic3.jpg" alt=""/>
-        
-        
-    </div>
-        
-    <div class="box5">
-	<h3 id="cw">3 Cool Websites:</h3>
-        <ul style="list-style-type:square;">
-        <li><a href="http://www.google.com" target="new">google</a></li>
-		<li><a href="http://www.yahoo.com" target="new">yahoo</a></li>
-		<li><a href="http://www.imdb.com" target="new">IMDB</a></li>
-	   </ul>
-	
-    </div>
-    
-    <div class="box6">
-        
-	<h3 id="fm">My Favourite Movies:</h3>
-	<ol>
-		<li>Totoro</li>
-		<li>The Notebook</li>
-		<li>A Walk To Remember</li>
-	</ol>
-        
-    </div>
-        
-    <div class="box7">
-	
-	<h3 id="fa">My favourite Artist: Jake Paul</h3>
-	
-	
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/hSlb1ezRqfA?ecver=1" frameborder="0" allowfullscreen></iframe>
-	
-    </div>
-        
-    <div class="box8"><p>Jake Paul is funny and a savage.</p>
-    </div>
-	
-	
-	<h3 id="bq">More info:</h3>
-	<blockquote>I like the colour blue and i have blue hair and a lot of things that are blue. Dolphins are my favourite animals and I have a 4ft long dolphin that my parents got for me from sea world in San Diego.</blockquote>
-        
-      
-        
-    </div> -->  
     
 	
 	
