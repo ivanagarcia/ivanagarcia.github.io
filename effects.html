@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>ivana garcia | works</title>
+<link href="extraPage.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Vidaloka" rel="stylesheet">  
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p.effects1").hide();
+    });
+    $("#show").click(function(){
+        $("p.effects1").show();
+    });
+});
+    
+$(document).ready(function(){
+    $("button.e2").click(function(){
+        $("p.p2").toggle();
+    });
+});
+    
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+    
+$(document).ready(function(){
+    $("button.e4").click(function(){
+        $("#div3").fadeOut();
+        $("#div2").fadeOut("slow");
+        $("#div1").fadeOut(5000);
+    });
+});
+    
+$(document).ready(function(){
+    $("button.e5").click(function(){
+        $("div").animate({left: '+=25px'});
+    });
+});
+    
+    
+</script>
+
+	</head>
+
+	<body>
+        <div class="nav">
+            <table style="width:84.2%">
+              <tr>
+                <th><a href="index.html"><img src="images/aboutIcons/home.svg" width="55px" height="55px"/></a></th>
+                <th><a href="about.html"><img src="images/aboutIcons/about.svg" width="55px" height="55px"/></a></th>
+                <th><a href="works.html"><img src="images/aboutIcons/works.svg" width="55px" height="55px"/></a></th>
+                <th><a href="#fm"><img src="images/aboutIcons/resume.svg" width="55px" height="55px"/></a></th>
+                <th><a href="#fa"><img src="images/aboutIcons/chat.svg" width="55px" height="55px"/></a></th>
+                  
+              </tr>
+                
+              <tr>
+                <td><a href="index.html" class="navwords"> home</a></td>
+                <td><a href="about.html" class="navwords"> about</a></td>
+                <td><a href="works.html" class="navwords">works</a></td>
+                <td><a href="#fm" class="navwords"> resume</a></td>
+                <td><a href="#fa" class="navwords"> chat</a></td>
+              </tr>
+            </table>
+        </div>
+        
+        <div>
+            <h2>ivana garcia</h2>
+        </div>
+        
+        <div class="aboutBox">
+            
+            <p id="about">some effects!</p>
+            
+            <div class="effectsOne">
+                <p id="about2">Hide and show</p>
+                <p class="effects1">If you click on the "Hide" button, I will disappear.</p>
+                <button class="e1" id="hide">Hide</button>
+                <button class="e1" id="show">Show</button>
+            </div>
+            
+            <div class="effectsTwo">
+                <p id="about2">Toggle</p>
+                <button class="e2">Toggle between hiding and showing the paragraph below (click on this button)</button>
+                <p class="p2">This is a paragraph with little content.</p>
+            </div>
+            
+            <div class="effectsThree">
+                <p id="about2">Slide</p>
+                <div id="flip">Click to slide down the panel</div>
+                <div id="panel">Hello world!</div>
+            </div>
+            
+            <div class="effectsFour">
+                <p id="about2">Fade</p>
+                <button class="e4">Click to fade out boxes below</button><br><br>
+                <div class="boxes" id="div1" style="width:90px;height:90px;background-color:#234780;"><br><br>(ง ° ͜ ʖ °)ง</div>
+                <div class="boxes" id="div2" style="width:90px;height:90px;background-color:#454779;"><br><br>ヽ( ͝° ͜ʖ͡°)ﾉ</div>
+                <div class="boxes" id="div3" style="width:90px;height:90px;background-color:#34356f;"><br><br>ᕕ( ͡° ͜ʖ ͡°)ᕗ</div>
+                
+            </div>
+            
+            <div class="effectsFive">
+                <p id="about2">Animate</p>
+                <button class="e5">click to move box =></button>
+                <div style="background:#34356f;height:100px;width:100px;position:absolute;"></div>
+            </div>
+ 
+        </div>
+            
+
+    
+	
+	
+	
+    </body>
+</html>

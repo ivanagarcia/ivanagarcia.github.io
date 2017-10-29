@@ -126,11 +126,11 @@ a.navwords:hover{
     
 }
 
-.effectsOne, .effectsTwo, .effectsThree{
+.effectsOne, .effectsTwo, .effectsThree, .effectsFour, .effectsFive{
     margin-top:20px;
     padding-top: 10px;
     padding-bottom:20px;
-    border-bottom: 5px solid #fff9e2;
+    border-bottom: 5px solid #f9a092;
 }
 
 p#about{
@@ -144,7 +144,11 @@ p#about2{
     color: #e5a092;
 }
 
-button.e1, button.e2{
+.effectsFive{
+    height: 180px;
+}
+
+button.e1, button.e2, button.e4, button.e5{
     background-color: #234780;
     border: none;
     font-family: 'Roboto Mono', monospace;
@@ -159,8 +163,16 @@ button.e1, button.e2{
     cursor: pointer;
 }
 
+.boxes{
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    color:#fff9e2;
+}
 
-
+.effectsFour{
+    height: 180px;
+}
 #panel, #flip {
     padding: 5px;
     text-align: center;
