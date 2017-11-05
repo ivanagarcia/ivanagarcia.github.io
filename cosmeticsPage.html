@@ -18,7 +18,7 @@
               <tr>
                 <th><a href="index.html"><img src="images/icons-darkblue-home.svg" width="55px" height="55px"/></a></th>
                 <th><a href="about.html"><img src="images/icons-darkblue-about.svg" width="55px" height="55px"/></a></th>
-                <th><img src="images/icons-darkblue-works.svg" width="55px" height="55px"/></th>
+                <th><a href="works.html"><img src="images/icons-darkblue-works.svg" width="55px" height="55px"/></a></th>
                 <th><a href="#fm"><img src="images/icons-darkblue-resume.svg" width="55px" height="55px"/></a></th>
                 <th><a href="#fa"><img src="images/icons-darkblue-chat.svg" width="55px" height="55px"/></a></th>
                   
@@ -27,7 +27,7 @@
               <tr>
                 <td><a href="index.html" class="navwords"> home</a></td>
                 <td><a href="about.html" class="navwords"> about</a></td>
-                <td><a href="works.html" class="navwords inactiveLink" style=" border-bottom: 5px solid #d96c61;">works</a></td>
+                <td><a href="works.html" class="navwords" style=" border-bottom: 5px solid #d96c61;">works</a></td>
                 <td><a href="#fm" class="navwords"> resume</a></td>
                 <td><a href="#fa" class="navwords"> chat</a></td>
               </tr>
@@ -69,10 +69,14 @@
                 <script src="fancybox/jquery.fancybox.js?v=2.1.4"></script> 
                 <script>
                   $(document).ready(function(){
-                    $('a').click(function(){
+                    $('a').click(function(event){
+                    
+                      
                       var largeImage = $(this).attr('data-full');
                       $('.selected').removeClass();
+                        
                       $(this).addClass('selected');
+                        
                       $('.full img').hide();
                       $('.full img').attr('src', largeImage);
                       $('.full img').fadeIn();
@@ -80,6 +84,7 @@
 
                     }); // closing the listening on a click
                     $('.full img').on('click', function(){
+                        event.preventDefault();
                       var modalImage = $(this).attr('src');
                       $.fancybox.open(modalImage);
                     });
