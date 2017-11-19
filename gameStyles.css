@@ -1,0 +1,338 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #fff8dc;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+.nav table{
+	border-collapse: collapse;
+	border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff8dc;
+    height: 100px;
+    margin-top: 25px;
+}
+
+
+tr{
+    text-align: center;
+}
+
+h2{
+    font-family: 'Vidaloka', serif;
+    font-size: 60px;
+    color: #d4584c;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+a.navwords{
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color: #234780;
+    border-bottom: 5px solid;
+    border-bottom-color: #fff8dc;
+    text-decoration: none; 
+}
+
+
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
+
+a.navwords:hover{
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color: #234780;
+    border-bottom: 5px solid;
+    border-bottom-color: #d4584c;
+    text-decoration: none;
+}
+
+
+
+
+.container{
+    background-color: aqua;
+    width: 955px;
+    height:760px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/game/cinnamonsCloset/background.jpg);
+    background-size: 955px 760px;
+}
+
+.column1{
+    /*background-color: orange;*/
+    width: 391px;
+    height:675px;
+    float: left;
+    margin-left: 47.5px;
+    margin-top:43.5px;
+}
+
+.title{
+    /*background-color: red;*/
+    width: 391px;
+    height:99.7px;
+    float: left;
+    background-image: url(images/game/cinnamonsCloset/title.png);
+    background-size: 391px 99.7px;
+
+}
+
+.mainScreenBackground{
+    /*background-color: palegreen;*/
+    width: 391px;
+    height:505.7px;
+    float: left;
+    margin-top: 6.4px;
+}
+
+.mainScreenHEAD{
+    /*background-color: blue;*/
+    width: 391px;
+    height:505.7px;
+    float: left;
+    margin-top: 6.4px;
+    background-image: url(images/game/cinnamonsCloset/cinnamon.png);
+    background-size: 391px 505.7px;
+    top: -512px;
+    position: relative;
+    
+}
+
+.mainScreenEYES{
+    /*background-color: blue;*/
+    width: 391px;
+    height:505.7px;
+    float: left;
+    margin-top: 6.4px;
+    background-size: 391px 505.7px;
+    top: -1024px;
+    position: relative;
+    
+}
+
+.mainScreenSHOES{
+    /*background-color: blue;*/
+    width: 391px;
+    height:505.7px;
+    float: left;
+    margin-top: 6.4px;
+    background-size: 391px 505.7px;
+    top: -1536px;
+    position: relative;
+}
+
+.mainScreenCLOTHES{
+    /*background-color: blue;*/
+    width: 391px;
+    height:505.7px;
+    float: left;
+    margin-top: 6.4px;
+    background-size: 391px 505.7px;
+    top: -2047px;
+    position: relative;
+}
+
+
+.resetButtonDiv{
+    /*background-color: pink;*/
+    width: 268px;
+    height:47px;
+    float: left;
+    margin-top: 17px;
+    top: -2045px;
+    left: 60px;
+    position: relative;
+
+}
+
+.resetButton{
+    background-color: #d4584c;
+    border: none;
+    color: #fff9e2;
+    padding: 10px 104px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.column2{
+    /*background-color: tan;*/
+    width: 398.5px;
+    height:674.5px;
+    float: left;
+    margin-left:68px;
+    margin-top: 43.5px;
+}
+
+.headRow{
+    /*background-color: steelblue;*/
+    width: 433px;
+    height:121px;
+    float: left;
+}
+
+.glassesRow{
+    /*background-color: paleturquoise;*/
+    width: 433px;
+    height:121px;
+    float: left;
+    margin-top: 18px;
+}
+
+.clothesRow{
+    /*background-color: darkviolet;*/
+    width: 433px;
+    height:121px;
+    float: left;
+    margin-top: 18px;
+}
+
+.shoesRow{
+    /*background-color: salmon;*/
+    width: 433px;
+    height:121px;
+    float: left;
+    margin-top: 18px;
+    
+}
+
+.backgroundRow{
+    /*background-color: thistle;*/
+    width: 433px;
+    height:121px;
+    float: left;
+    margin-top: 18px;
+}
+
+
+
+.titleBar{
+    /*background-color: olivedrab;*/
+    width: 245.5px;
+    height:30px;
+    float: left;
+    
+}
+
+.thumbnailButtons{
+    /*background-color: peachpuff;*/
+    width: 440px;
+    height:95px;
+    float: left;
+    
+}
+
+h3{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 16px;
+    color: #234780;
+    line-height: 30px;
+    margin-left: 35px;
+}
+
+.iconTN{
+    /*background-color: aquamarine;*/
+    width:30px;
+    float: left;
+}
+
+.headerTitle{
+    /*background-color: darkred;*/
+}
+
+.smallTN{
+    margin-right: 23px;
+    border: 3px solid #f4f3ec;
+}
+
+img.initiallyHidden{
+    display: none;
+}
+
+
+.crossMark{
+    margin-right: 23px;
+    border: 3px solid #f5f2de;
+}
+
+
+.selectedHEAD{
+    margin-right: 23px;
+    border: 3px solid #d4584c;
+}
+
+.selectedEYES{
+    margin-right: 23px;
+    border: 3px solid #d4584c;
+}
+
+.selectedSHOES{
+    margin-right: 23px;
+    border: 3px solid #d4584c;
+}
+
+.selectedCLOTHES{
+    margin-right: 23px;
+    border: 3px solid #d4584c;
+}
+
+.selectedBG{
+    margin-right: 23px;
+    border: 3px solid #d4584c;
+}

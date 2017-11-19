@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>ivana garcia | workbook</title>
+<link href="gameStyles.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Vidaloka" rel="stylesheet">  
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("img.TNhead1").click(function(){
+        $("img.TNhead1BIG").toggle();
+        $("img.TNhead2BIG").hide();
+        $("img.TNhead1").toggleClass("selectedHEAD");
+        $("img.TNhead2").removeClass("selectedHEAD");
+    });
+    
+    $("img.TNhead2").click(function(){
+        $("img.TNhead2BIG").toggle();
+        $("img.TNhead1BIG").hide();
+        $("img.TNhead2").toggleClass("selectedHEAD");
+        $("img.TNhead1").removeClass("selectedHEAD");
+    });
+    
+    
+    $("img.TNeyes1").click(function(){
+        $("img.TNeyes1BIG").toggle();
+        $("img.TNeyes2BIG").hide();
+        $("img.TNeyes1").toggleClass("selectedEYES");
+        $("img.TNeyes2").removeClass("selectedEYES");
+    });
+    
+    
+    
+    $("img.TNshoes1").click(function(){
+        $("img.TNshoes1BIG").toggle();
+        $("img.TNshoes2BIG").hide();
+        $("img.TNshoes1").toggleClass("selectedSHOES");
+        $("img.TNshoes2").removeClass("selectedSHOES");
+    });
+    
+    $("img.TNclothes1").click(function(){
+        $("img.TNclothes1BIG").toggle();
+        $("img.TNclothes2BIG").hide();
+        $("img.TNclothes1").toggleClass("selectedCLOTHES");
+        $("img.TNclothes2").removeClass("selectedCLOTHES");
+    });
+    
+    $("img.TNbg1").click(function(){
+        $("img.TNbg1BIG").toggle();
+        $("img.TNbg2BIG").hide();
+        $("img.TNbg1").toggleClass("selectedBG");
+        $("img.TNbg2").removeClass("selectedBG");
+    });
+
+});
+</script>
+    
+</head>
+
+	<body>
+        <div class="nav">
+            <table style="width:84.2%">
+              <tr>
+                <th><a href="index.html"><img src="images/icons-darkblue-home.svg" width="55px" height="55px"/></a></th>
+                <th><a href="about.html"><img src="images/icons-darkblue-about.svg" width="55px" height="55px"/></a></th>
+                <th><a href="works.html"><img src="images/icons-darkblue-works.svg" width="55px" height="55px"/></a></th>
+                <th><a href="#fm"><img src="images/icons-darkblue-resume.svg" width="55px" height="55px"/></a></th>
+                <th><a href="#fa"><img src="images/icons-darkblue-chat.svg" width="55px" height="55px"/></a></th>
+                  
+              </tr>
+                
+              <tr>
+                <td><a href="index.html" class="navwords"> home</a></td>
+                <td><a href="about.html" class="navwords"> about</a></td>
+                <td><a href="works.html" class="navwords">works</a></td>
+                <td><a href="#fm" class="navwords"> resume</a></td>
+                <td><a href="#fa" class="navwords"> chat</a></td>
+              </tr>
+            </table>
+        </div>
+        
+        <div>
+            <h2>ivana garcia</h2>
+        </div>
+        
+        <div class="container">
+            <div class ="column1">
+                <div class="title">
+                </div>
+                
+                <div class="mainScreenBackground">
+                    <img class="TNbg1BIG initiallyHidden bgAcc" src="images/game/cinnamonsCloset/background/forestBg.png" width="391px" height="505.7px"/>
+                </div>
+                
+                <div class="mainScreenHEAD">
+                    <!--HEAD-->
+                    <img class="TNhead1BIG initiallyHidden headAcc" src="images/game/cinnamonsCloset/head/beeHead.png" width="391px" height="505.7px"/>
+                    
+                    <img class="TNhead2BIG initiallyHidden headAcc" src="images/game/cinnamonsCloset/head/crownHead.png" width="391px" height="505.7px"/>
+                    
+                </div>
+                
+                <div class="mainScreenEYES">
+                    <!--EYES-->
+                    <img class="TNeyes1BIG initiallyHidden eyesAcc" src="images/game/cinnamonsCloset/eyes/blueGlasses.png" width="391px" height="505.7px"/>
+                    <img class="TNeyes2BIG initiallyHidden eyesAcc" src="images/game/cinnamonsCloset/eyes/goldGlasses.png" width="391px" height="505.7px"/>
+                </div>
+                
+                <div class="mainScreenSHOES">
+                    <img class="TNshoes1BIG initiallyHidden shoesAcc" src="images/game/cinnamonsCloset/shoes/ballerinaShoes.png" width="391px" height="505.7px"/>
+                </div>
+                
+                <div class="mainScreenCLOTHES">
+                    <img class="TNclothes1BIG initiallyHidden clothesAcc" src="images/game/cinnamonsCloset/clothes/ballerina.png" width="391px" height="505.7px"/>
+                </div>
+                
+                <div class="resetButtonDiv">
+                    <button class="resetButton">Reset</button>
+                </div>
+            </div>
+            
+            <div class="column2">
+                <div class="headRow">
+                    <div class="titleBar">
+                        <div class="iconTN">
+                            <img src="images/game/cinnamonsCloset/icons/1-head.svg" width="30px" height="30px"/>
+                        </div>
+                        
+                        <div class="headerTitle">
+                        <h3>head accessories</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="thumbnailButtons">
+                            <img class="smallTN TNhead1" src="images/game/cinnamonsCloset/thumbnail/head/beeHeadT.png" width="89px" height="89px"/>
+
+                            <img class="smallTN TNhead2" src="images/game/cinnamonsCloset/thumbnail/head/crownT.png" width="89px" height="89px"/>
+                        <a>
+                            <img class="smallTN" src="images/game/cinnamonsCloset/thumbnail/head/flowersT.png" width="89px" height="89px"/>
+                        </a><a>
+                            <img class="=crossMark" src="images/game/cinnamonsCloset/icons/resetCross.svg" width="30.7px" height="89px"/>
+                        </a>
+                    </div>
+                </div>  
+                
+                <div class="glassesRow">
+                    <div class="titleBar">
+                        <div class="iconTN">
+                            <img src="images/game/cinnamonsCloset/icons/2-glasses.svg" width="30px" height="30px"/>
+                        </div>
+                        
+                        <div class="headerTitle">
+                        <h3>glasses</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="thumbnailButtons">
+                        <img class="smallTN TNeyes1" src="images/game/cinnamonsCloset/thumbnail/eyes/blueGlassesT.png" width="89px" height="89px"/>
+
+                        <img class="smallTN TNeyes2" src="images/game/cinnamonsCloset/thumbnail/eyes/goldGlassesT.png" width="89px" height="89px"/>
+                    </div>
+                </div>
+                
+                <div class="clothesRow">
+                    <div class="titleBar">
+                        <div class="iconTN">
+                            <img src="images/game/cinnamonsCloset/icons/3-clothes.svg" width="30px" height="30px"/>
+                        </div>
+                        
+                        <div class="headerTitle">
+                        <h3>clothes</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="thumbnailButtons">
+                        <img class="smallTN TNclothes1" src="images/game/cinnamonsCloset/thumbnail/clothes/ballerinaT.png" width="89px" height="89px"/>
+                    </div>
+                </div>
+                
+                <div class="shoesRow">
+                    <div class="titleBar">
+                        <div class="iconTN">
+                            <img src="images/game/cinnamonsCloset/icons/4-shoes-05.svg" width="30px" height="30px"/>
+                        </div>
+                        
+                        <div class="headerTitle">
+                        <h3>shoes</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="thumbnailButtons">
+                        <img class="smallTN TNshoes1" src="images/game/cinnamonsCloset/thumbnail/shoes/balletShoesT.png" width="89px" height="89px"/>
+                    </div>
+                </div>
+                
+                <div class="backgroundRow">
+                    <div class="titleBar">
+                        <div class="iconTN">
+                            <img src="images/game/cinnamonsCloset/icons/5-backg.svg" width="30px" height="30px"/>
+                        </div>
+                        
+                        <div class="headerTitle">
+                        <h3>background</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="thumbnailButtons">
+                        <img class="smallTN TNbg1" src="images/game/cinnamonsCloset/thumbnail/background/forestT.png" width="89px" height="89px"/>
+                    </div>
+                </div>
+            </div>
+            
+ 
+        </div>
+            
+
+    
+	
+	
+	
+    </body>
+</html>
