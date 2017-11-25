@@ -96,14 +96,15 @@ a.navwords:hover{
 
 
 .container{
-    background-color: aqua;
-    width: 955px;
-    height:760px;
+    /*background-color: aqua;*/
+    width: 950px;
+    height:820px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(images/game/cinnamonsCloset/background.jpg);
-    background-size: 955px 760px;
+    background-image: url(images/game/cinnamonsCloset/background2.jpg);
+    background-size: 1000px 800px;
+    /*border: 5px solid #25487e;*/
 }
 
 .column1{
@@ -179,16 +180,44 @@ a.navwords:hover{
     top: -2047px;
     position: relative;
 }
+.saveButtonDiv{
+    /*background-color: pink;*/
+    width: 300px;
+    height:45px;
+    float: left;
+    margin-top: 17px;
+    top: -2015px;
+    left: 70px;
+    position: relative;
+
+}
+
+.saveButton{
+    background-color: #d4584c;
+    border: none;
+    color: #fff9e2;
+    padding: 8px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
 
 .resetButtonDiv{
-    /*background-color: pink;*/
-    width: 268px;
-    height:47px;
+    /*background-color: red;*/
+    width: 80px;
+    height:40px;
     float: left;
     margin-top: 17px;
-    top: -2045px;
-    left: 60px;
+    top: -1955px;
+    left: -200px;
     position: relative;
 
 }
@@ -197,13 +226,13 @@ a.navwords:hover{
     background-color: #d4584c;
     border: none;
     color: #fff9e2;
-    padding: 10px 104px;
+    padding: 6px 80px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -215,7 +244,7 @@ a.navwords:hover{
     width: 398.5px;
     height:674.5px;
     float: left;
-    margin-left:68px;
+    margin-left:80px;
     margin-top: 43.5px;
 }
 
@@ -298,7 +327,7 @@ h3{
 
 .smallTN{
     margin-right: 23px;
-    border: 3px solid #f4f3ec;
+    border: 5px solid #f4f3ec;
 }
 
 img.initiallyHidden{
@@ -308,31 +337,31 @@ img.initiallyHidden{
 
 .crossMark{
     margin-right: 23px;
-    border: 3px solid #f5f2de;
+    border: 5px solid #f5f2de;
 }
 
 
 .selectedHEAD{
     margin-right: 23px;
-    border: 3px solid #d4584c;
+    border: 5px solid #d4584c;
 }
 
 .selectedEYES{
     margin-right: 23px;
-    border: 3px solid #d4584c;
+    border: 5px solid #d4584c;
 }
 
 .selectedSHOES{
     margin-right: 23px;
-    border: 3px solid #d4584c;
+    border: 5px solid #d4584c;
 }
 
 .selectedCLOTHES{
     margin-right: 23px;
-    border: 3px solid #d4584c;
+    border: 5px solid #d4584c;
 }
 
 .selectedBG{
     margin-right: 23px;
-    border: 3px solid #d4584c;
+    border: 5px solid #d4584c;
 }
