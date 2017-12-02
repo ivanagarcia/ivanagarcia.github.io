@@ -152,6 +152,35 @@ $(document).ready(function(){
         $("img.TNbg1").removeClass("selectedBG");
         $("img.TNbg2").removeClass("selectedBG");
     });
+    
+    $("button.resetButton").click(function(){
+        $("img.TNhead1BIG").hide();
+        $("img.TNhead2BIG").hide();
+        $("img.TNhead3BIG").hide();
+        $("img.smallTNh").removeClass("selectedHEAD");
+        
+        $("img.TNeyes1BIG").hide();
+        $("img.TNeyes2BIG").hide();
+        $("img.TNeyes3BIG").hide();
+        $("img.smallTNe").removeClass("selectedEYES");
+        
+        $("img.TNshoes1BIG").hide();
+        $("img.TNshoes2BIG").hide();
+        $("img.TNshoes3BIG").hide();
+        $("img.smallTNs").removeClass("selectedSHOES");
+        
+        $("img.TNclothes1BIG").hide();
+        $("img.TNclothes2BIG").hide();
+        $("img.TNclothes3BIG").hide();
+        $("img.smallTNc").removeClass("selectedCLOTHES");
+        
+        $("img.TNbg1BIG").hide();
+        $("img.TNbg2BIG").hide();
+        $("img.TNbg3BIG").hide();
+        $("img.smallTNb").removeClass("selectedBG");
+ 
+        
+    });
 
 });
 </script>
@@ -184,13 +213,17 @@ $(document).ready(function(){
             <h2>ivana garcia</h2>
         </div>
         
+        <div class="directions">
+            <h4> How to play: Tap on a thumbnail to dress-up Cinnamon. Tap on the thumbnail again to take it off, or tap on the 'Reset' button to get rid of everything on Cinnamon. Save your current outfit to your computer by tapping on the 'Save a pic!' button.</h4>
+        </div>
+        
         <div class="container">
             <div class ="column1">
                 <div class="title">
                 </div>
                 
                 <div class="mainScreenBackground">
-                    <img class="TNbg1BIG initiallyHidden bgAcc" src="images/game/cinnamonsCloset/background/forestBg.png" width="391px" height="505.7px"/>
+                    <img class="TNbg1BIG initiallyHidden bgAcc bigPIC" src="images/game/cinnamonsCloset/background/forestBg.png" width="391px" height="505.7px"/>
                     
                     <img class="TNbg2BIG initiallyHidden bgAcc" src="images/game/cinnamonsCloset/background/pinkBg.png" width="391px" height="505.7px"/>
                     
@@ -199,7 +232,7 @@ $(document).ready(function(){
                 
                 <div class="mainScreenHEAD">
                     <!--HEAD-->
-                    <img class="TNhead1BIG initiallyHidden headAcc" src="images/game/cinnamonsCloset/head/beeHead.png" width="391px" height="505.7px"/>
+                    <img class="TNhead1BIG initiallyHidden headAcc bigPIC" src="images/game/cinnamonsCloset/head/beeHead.png" width="391px" height="505.7px"/>
                     
                     <img class="TNhead2BIG initiallyHidden headAcc" src="images/game/cinnamonsCloset/head/crownHead.png" width="391px" height="505.7px"/>
                     
@@ -209,19 +242,19 @@ $(document).ready(function(){
                 
                 <div class="mainScreenEYES">
                     <!--EYES-->
-                    <img class="TNeyes1BIG initiallyHidden eyesAcc" src="images/game/cinnamonsCloset/eyes/blueGlasses.png" width="391px" height="505.7px"/>
+                    <img class="TNeyes1BIG initiallyHidden eyesAcc bigPIC" src="images/game/cinnamonsCloset/eyes/blueGlasses.png" width="391px" height="505.7px"/>
                     <img class="TNeyes2BIG initiallyHidden eyesAcc" src="images/game/cinnamonsCloset/eyes/goldGlasses.png" width="391px" height="505.7px"/>
                     <img class="TNeyes3BIG initiallyHidden eyesAcc" src="images/game/cinnamonsCloset/eyes/heartGlasses.png" width="391px" height="505.7px"/>
                 </div>
                 
                 <div class="mainScreenSHOES">
-                    <img class="TNshoes1BIG initiallyHidden shoesAcc" src="images/game/cinnamonsCloset/shoes/ballerinaShoes.png" width="391px" height="505.7px"/>
+                    <img class="TNshoes1BIG initiallyHidden shoesAcc bigPIC" src="images/game/cinnamonsCloset/shoes/ballerinaShoes.png" width="391px" height="505.7px"/>
                     <img class="TNshoes2BIG initiallyHidden shoesAcc" src="images/game/cinnamonsCloset/shoes/blackBoots.png" width="391px" height="505.7px"/>
                     <img class="TNshoes3BIG initiallyHidden shoesAcc" src="images/game/cinnamonsCloset/shoes/grayShoes.png" width="391px" height="505.7px"/>
                 </div>
                 
                 <div class="mainScreenCLOTHES">
-                    <img class="TNclothes1BIG initiallyHidden clothesAcc" src="images/game/cinnamonsCloset/clothes/ballerina.png" width="391px" height="505.7px"/>
+                    <img class="TNclothes1BIG initiallyHidden clothesAcc bigPIC" src="images/game/cinnamonsCloset/clothes/ballerina.png" width="391px" height="505.7px"/>
                     <img class="TNclothes2BIG initiallyHidden clothesAcc" src="images/game/cinnamonsCloset/clothes/bee.png" width="391px" height="505.7px"/>
                     <img class="TNclothes3BIG initiallyHidden clothesAcc" src="images/game/cinnamonsCloset/clothes/overalls.png" width="391px" height="505.7px"/>
                 </div>
@@ -247,11 +280,11 @@ $(document).ready(function(){
                         
                     </div>
                     <div class="thumbnailButtons">
-                            <img class="smallTN TNhead1" src="images/game/cinnamonsCloset/thumbnail/head/beeHeadT.png" width="89px" height="89px"/>
+                            <img class="smallTNh TNhead1" src="images/game/cinnamonsCloset/thumbnail/head/beeHeadT.png" width="89px" height="89px"/>
 
-                            <img class="smallTN TNhead2" src="images/game/cinnamonsCloset/thumbnail/head/crownT.png" width="89px" height="89px"/>
+                            <img class="smallTNh TNhead2" src="images/game/cinnamonsCloset/thumbnail/head/crownT.png" width="89px" height="89px"/>
                         
-                            <img class="smallTN TNhead3" src="images/game/cinnamonsCloset/thumbnail/head/flowersT.png" width="89px" height="89px"/>
+                            <img class="smallTNh TNhead3" src="images/game/cinnamonsCloset/thumbnail/head/flowersT.png" width="89px" height="89px"/>
                        
                             <!--<img class="=crossMark" src="images/game/cinnamonsCloset/icons/resetCross.svg" width="30.7px" height="89px"/>-->
                         
@@ -270,11 +303,11 @@ $(document).ready(function(){
                         
                     </div>
                     <div class="thumbnailButtons">
-                        <img class="smallTN TNeyes1" src="images/game/cinnamonsCloset/thumbnail/eyes/blueGlassesT.png" width="89px" height="89px"/>
+                        <img class="smallTNe TNeyes1" src="images/game/cinnamonsCloset/thumbnail/eyes/blueGlassesT.png" width="89px" height="89px"/>
 
-                        <img class="smallTN TNeyes2" src="images/game/cinnamonsCloset/thumbnail/eyes/goldGlassesT.png" width="89px" height="89px"/>
+                        <img class="smallTNe TNeyes2" src="images/game/cinnamonsCloset/thumbnail/eyes/goldGlassesT.png" width="89px" height="89px"/>
                         
-                        <img class="smallTN TNeyes3" src="images/game/cinnamonsCloset/thumbnail/eyes/heartGlassesT.png" width="89px" height="89px"/>
+                        <img class="smallTNe TNeyes3" src="images/game/cinnamonsCloset/thumbnail/eyes/heartGlassesT.png" width="89px" height="89px"/>
                     </div>
                 </div>
                 
@@ -290,9 +323,9 @@ $(document).ready(function(){
                         
                     </div>
                     <div class="thumbnailButtons">
-                        <img class="smallTN TNclothes1" src="images/game/cinnamonsCloset/thumbnail/clothes/ballerinaT.png" width="89px" height="89px"/>
-                        <img class="smallTN TNclothes2" src="images/game/cinnamonsCloset/thumbnail/clothes/beeT.png" width="89px" height="89px"/>
-                        <img class="smallTN TNclothes3" src="images/game/cinnamonsCloset/thumbnail/clothes/overallsT.png" width="89px" height="89px"/>
+                        <img class="smallTNc TNclothes1" src="images/game/cinnamonsCloset/thumbnail/clothes/ballerinaT.png" width="89px" height="89px"/>
+                        <img class="smallTNc TNclothes2" src="images/game/cinnamonsCloset/thumbnail/clothes/beeT.png" width="89px" height="89px"/>
+                        <img class="smallTNc TNclothes3" src="images/game/cinnamonsCloset/thumbnail/clothes/overallsT.png" width="89px" height="89px"/>
                     </div>
                 </div>
                 
@@ -308,9 +341,9 @@ $(document).ready(function(){
                         
                     </div>
                     <div class="thumbnailButtons">
-                        <img class="smallTN TNshoes1" src="images/game/cinnamonsCloset/thumbnail/shoes/balletShoesT.png" width="89px" height="89px"/>
-                        <img class="smallTN TNshoes2" src="images/game/cinnamonsCloset/thumbnail/shoes/bootsT.png" width="89px" height="89px"/>
-                        <img class="smallTN TNshoes3" src="images/game/cinnamonsCloset/thumbnail/shoes/shoesT.png" width="89px" height="89px"/>
+                        <img class="smallTNs TNshoes1" src="images/game/cinnamonsCloset/thumbnail/shoes/balletShoesT.png" width="89px" height="89px"/>
+                        <img class="smallTNs TNshoes2" src="images/game/cinnamonsCloset/thumbnail/shoes/bootsT.png" width="89px" height="89px"/>
+                        <img class="smallTNs TNshoes3" src="images/game/cinnamonsCloset/thumbnail/shoes/shoesT.png" width="89px" height="89px"/>
                     </div>
                 </div>
                 
@@ -326,9 +359,9 @@ $(document).ready(function(){
                         
                     </div>
                     <div class="thumbnailButtons">
-                        <img class="smallTN TNbg1" src="images/game/cinnamonsCloset/thumbnail/background/forestT.png" width="89px" height="89px"/>
-                        <img class="smallTN TNbg2" src="images/game/cinnamonsCloset/thumbnail/background/pinkT.png" width="89px" height="89px"/>
-                        <img class="smallTN TNbg3" src="images/game/cinnamonsCloset/thumbnail/background/starsT.png" width="89px" height="89px"/>
+                        <img class="smallTNb TNbg1" src="images/game/cinnamonsCloset/thumbnail/background/forestT.png" width="89px" height="89px"/>
+                        <img class="smallTNb TNbg2" src="images/game/cinnamonsCloset/thumbnail/background/pinkT.png" width="89px" height="89px"/>
+                        <img class="smallTNb TNbg3" src="images/game/cinnamonsCloset/thumbnail/background/starsT.png" width="89px" height="89px"/>
                     </div>
                 </div>
             </div>

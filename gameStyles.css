@@ -92,11 +92,14 @@ a.navwords:hover{
     text-decoration: none;
 }
 
-
-
+.directions{
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .container{
-    /*background-color: aqua;*/
+    background-color: aqua;
     width: 950px;
     height:820px;
     margin-top: 20px;
@@ -239,6 +242,23 @@ a.navwords:hover{
     
 }
 
+
+.resetButton:hover{
+    background-color: #df8c87;
+    border: none;
+    color: #fff9e2;
+    padding: 6px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 .column2{
     /*background-color: tan;*/
     width: 398.5px;
@@ -315,6 +335,14 @@ h3{
     margin-left: 35px;
 }
 
+h4{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 14px;
+    color: #234780;
+    line-height: 30px;
+}
+
 .iconTN{
     /*background-color: aquamarine;*/
     width:30px;
@@ -325,10 +353,16 @@ h3{
     /*background-color: darkred;*/
 }
 
-.smallTN{
+.smallTNh, .smallTNe, .smallTNc, .smallTNs, .smallTNb{
     margin-right: 23px;
     border: 5px solid #f4f3ec;
 }
+
+.smallTNh:hover, .smallTNe:hover, .smallTNc:hover, .smallTNs:hover, .smallTNb:hover{
+    margin-right: 23px;
+    border: 5px solid #df8c87;
+}
+
 
 img.initiallyHidden{
     display: none;
@@ -344,7 +378,9 @@ img.initiallyHidden{
 .selectedHEAD{
     margin-right: 23px;
     border: 5px solid #d4584c;
+    
 }
+
 
 .selectedEYES{
     margin-right: 23px;
