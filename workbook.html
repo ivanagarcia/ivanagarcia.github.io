@@ -42,6 +42,68 @@
             <a class="anchor" href="#week11">Week 11</a>
             <a class="anchor" href="#week12">Week 12</a>
             <a class="anchor" href="#week13">Week 13</a>
+            <a class="anchor" href="#week14">Week 14</a>
+            <a class="gamelink" href="http://ivanagarcia.com/game">The game: Cinnamon's Closet</a>
+            
+            
+            <div class="weekly">
+                <a class="anchorHEADING" id="week14"><h3>Week 14: 02/12/17</h3></a>
+                <h4>Reset Button: </h4>
+                <p>I had to go through and figure out how to write the code for the reset button. It is similar to the other buttons, however it just pretty much turns everything off. I couldn’t figure out how to do the shorthand way (by using the same image class for everything), because each type of item has its own class (which I set myself up for) and therefore the lengthy lines of code.</p>
+                
+                <img class="entry" src="images/workbook/week14/week14-1.png"/>
+                
+                <h4>Hover effect:</h4>
+                <p>Since the hand cursor doesn’t show up when the user hovers over something clickable, I have added hover attributes to give a feedback status to the user, to let them know something is clickable. For example, below, the bee head accessory is selected, but the mouse is hovering over the crown thumbnail.</p>
+                
+                <img class="entry" src="images/workbook/week14/week14-2.png"/>
+                
+                <h4>Sounds:</h4>
+                <p>I added a small sound effect that would turn on whenever the user clicks on a thumbnail or a button. It is slightly slow, and will play after the first sound stops playing, so sometimes, if the user is too quick, the sound won’t play in time. I tried to use a fade in attribute to give an illusion that the image is ‘loading’, but even that was too hard for me.
+                <br>
+                The code that I ended up implementing is:</p>
+                
+                <img class="entry" src="images/workbook/week14/week14-3.png"/>
+                    
+                
+                <h4>Save a pic:</h4>
+                <p>I had a look at ways to save an image of Cinnamon, by looking at existing games where users are able to save images (games/widgets like sketching games, and dress-up games). I looked at the ‘inspect element’ feature on safari, however it was not helpful.<br><br> </p>
+                    
+                <p>
+                    Examples of existing games:
+                    <br>
+                </p>
+                 <ul>
+                    <li><a href="	https://sketch.io/sketchpad/" class="bullet">• "Sketchpad:"</a><p> This web application gives the user many options as to how to save the image, and I liked the “save region” idea but I don’t really know how to implement the code. The website also gives the user a chance to save their image in whatever format they desire. Another way this website uses the save option, is to open the image in a new tab, which I will try to do.</p>
+                    <img class="entry" src="images/workbook/week14/week14-4.png"/></li>
+                    
+                    
+                     
+                     <p>There were so many lines of code for so many of the examples and I couldn’t really figure out how to implement the code to suit my game:
+                         <li><a href="https://stackoverflow.com/questions/15370593/display-hidden-div-as-content-in-new-window" class="bullet">• "Stackoverflow – Hidden divs"</a>
+                     <p> I found this website to open images in a new window, which I will try to implement on my code. </p></li>
+                         <li><a href="https://stackoverflow.com/questions/19753371/jquery-save-image-onclick" class="bullet">• "Stackoverflow – Jquery: save image on click"</a></li>
+                         <li><a href="https://stackoverflow.com/questions/30694433/how-to-give-browser-save-image-as-option-to-button" class="bullet">• "Stackoverflow – 'Save image as' option"</a></li>
+                         <li><a href="https://forum.jquery.com/topic/how-to-save-images-in-folder-using-jquery-when-user-uploads-the-images" class="bullet">• "Stackoverflow – Jquery Save image in folder"</a></li>
+                         
+                         
+                     </p>
+                     <p> <br>I think another way I could implement this idea is to have a hidden div, and stack up the images, depending on what the user clicks. And once they click on the save button, then the hidden div will open in a new browser (and therefore will no longer be hidden), and there the user can do whatever they want with their now showing div. </p>
+                </ul>
+                <br>
+                <h4>Directions:</h4>
+                <p>Another thing I had forgotten from Coby’s critique was the ‘how to play’ instructions bit for the user. I added a few lines to explain how to use the widget to the user. There is also a link to my process book :--)</p>
+                
+                <img class="entry" src="images/workbook/week14/week14-5.png"/>
+                
+               <br>
+                <br>
+                
+                <A class="anchor" HREF="#top">Back To Top</A> 
+                <br>
+            </div>
+                
+            
             
             <div class="weekly">
                 <a class="anchorHEADING" id="week13"><h3>Week 13: 24/11/17</h3></a>
@@ -54,12 +116,12 @@
                 </p>
                 <h4>Going forward:</h4>
                 <p>I had to change the dimensions of my game slightly to accommodate for the loss of the cross marks, and the addition of the new “Take a pic!” button. I then added in the rest of the thumbnails, and I changed the border stroke too. The image below (on the left) shows the before state (nothing pressed) and the image below (on the right) shows some items of clothing ‘ON.’</p>
-                <img class="entry" src="images/workbook/week13/16-1.png"/>
+                <img class="entry" src="images/workbook/week13/week13-1.png"/>
                 
                 <p>I did a really quick search as to how I would code for the user to be able to save their image, and it seemed like a lengthy process. But here are some future links to look into for saving images to the user’s computer:</p>
                 <ul>
-                    <li><a href="•	http://jsfiddle.net/rhurdtqx/" class="bullet"> "Fiddle"</a></li>
-                    <li><a href="•	https://stackoverflow.com/questions/30694433/how-to-give-browser-save-image-as-option-to-button" class="bullet"> "Stackoverflow"</a></li>
+                    <li><a href="	http://jsfiddle.net/rhurdtqx/" class="bullet">• "Fiddle"</a></li>
+                    <li><a href="	https://stackoverflow.com/questions/30694433/how-to-give-browser-save-image-as-option-to-button" class="bullet">• "Stackoverflow"</a></li>
                 </ul>
                 <br>
                 
@@ -177,9 +239,9 @@
                 <h4>Tech features:</h4>
                 <p>I found some pens from codepen that I can base my code from, for example: </p>
                 <ul>
-                    <li><a href="https://codepen.io/kristen3119/full/kkkdBr" class="bullet"> "Dress-up Game"</a></li>
-                    <li><a href="https://codepen.io/giuliacardieri/pen/pRWVGY?q=dress+up&limit=all&type=type-pens" class="bullet"> "Potato Maker - Css Illustrations Only"</a></li>
-                    <li><a href="https://codepen.io/giuliacardieri/pen/YNJBMO?q=dress+up&limit=all&type=type-pens" class="bullet"> "Dinokiki Maker - SVG only"</a></li>
+                    <li><a href="https://codepen.io/kristen3119/full/kkkdBr" class="bullet">• "Dress-up Game"</a></li>
+                    <li><a href="https://codepen.io/giuliacardieri/pen/pRWVGY?q=dress+up&limit=all&type=type-pens" class="bullet">• "Potato Maker - Css Illustrations Only"</a></li>
+                    <li><a href="https://codepen.io/giuliacardieri/pen/YNJBMO?q=dress+up&limit=all&type=type-pens" class="bullet">• "Dinokiki Maker - SVG only"</a></li>
                 </ul>
                 <br>
                 <p>Javascript is used, with PNG images layered on top of each other. Once a button is clicked, the accessory, or clothing item is revealed.</p>

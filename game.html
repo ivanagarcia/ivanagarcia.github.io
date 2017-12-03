@@ -3,20 +3,27 @@
 
 <head>
 <meta charset="UTF-8">
-<title>ivana garcia | workbook</title>
+<title>ivana garcia | cinnamon's closet</title>
 <link href="gameStyles.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Vidaloka" rel="stylesheet">  
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
+    
     $("img.TNhead1").click(function(){
+        
+        
         $("img.TNhead1BIG").toggle();
+        
         $("img.TNhead2BIG").hide();
         $("img.TNhead3BIG").hide();
+        
         $("img.TNhead1").toggleClass("selectedHEAD");
         $("img.TNhead2").removeClass("selectedHEAD");
         $("img.TNhead3").removeClass("selectedHEAD");
+        
+        
     });
     
     $("img.TNhead2").click(function(){
@@ -178,16 +185,30 @@ $(document).ready(function(){
         $("img.TNbg2BIG").hide();
         $("img.TNbg3BIG").hide();
         $("img.smallTNb").removeClass("selectedBG");
+        
+        
  
         
     });
-
+    
+    
+    
+    
+    const rollSound = new Audio("audio/buttonSound1.mp3");
+    $("img.smallTNh").click(e => rollSound.play());
+    $("img.smallTNe").click(e => rollSound.play());
+    $("img.smallTNc").click(e => rollSound.play());
+    $("img.smallTNs").click(e => rollSound.play());
+    $("img.smallTNb").click(e => rollSound.play());
+    $("button.resetButton").click(e => rollSound.play());
+    
 });
 </script>
     
 </head>
 
 	<body>
+        
         <div class="nav">
             <table style="width:84.2%">
               <tr>
@@ -214,7 +235,9 @@ $(document).ready(function(){
         </div>
         
         <div class="directions">
-            <h4> How to play: Tap on a thumbnail to dress-up Cinnamon. Tap on the thumbnail again to take it off, or tap on the 'Reset' button to get rid of everything on Cinnamon. Save your current outfit to your computer by tapping on the 'Save a pic!' button.</h4>
+            <h4> How to play: Tap on a thumbnail to dress-up Cinnamon. Tap on the thumbnail again to take it off, or tap on the 'Reset' button to get rid of everything on Cinnamon. Save your current outfit to your computer by screenshotting the page! p.s. Sound effects take a while to play :( 
+            <br>
+                p.s.s. <a href="https://ivanagarcia.com/workbook">here is the process work for this game!</a></h4>
         </div>
         
         <div class="container">
@@ -259,9 +282,9 @@ $(document).ready(function(){
                     <img class="TNclothes3BIG initiallyHidden clothesAcc" src="images/game/cinnamonsCloset/clothes/overalls.png" width="391px" height="505.7px"/>
                 </div>
                 
-                <div class="saveButtonDiv">
+                <!--<div class="saveButtonDiv">
                     <button class="saveButton">Take a pic!</button>
-                </div>
+                </div>-->
                 <div class="resetButtonDiv">
                     <button class="resetButton">Reset</button>
                 </div>
