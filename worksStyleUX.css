@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #fff8dc;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table.gallerytable{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.gallerytable{
+    padding: 10px;
+    text-align: center;
+}
+
+.nav table{
+	border-collapse: collapse;
+	border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff8dc;
+    height: 100px;
+    margin-top: 25px;
+}
+
+
+tr{
+    text-align: center;
+}
+
+h2{
+    font-family: 'Vidaloka', serif;
+    font-size: 60px;
+    color: #d4584c;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+a.navwords{
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color: #234780;
+    border-bottom: 5px solid;
+    border-bottom-color: #fff8dc;
+    text-decoration: none; 
+}
+
+
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
+
+a.navwords:hover{
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color: #234780;
+    border-bottom: 5px solid;
+    border-bottom-color: #d4584c;
+    text-decoration: none;
+}
+
+.projectTitle{
+    /*background-color: red;*/
+    width: 594px;
+    height:25px;
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color: #234780;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    margin-bottom: 35px;
+}
+
+.titleLeft{
+    float:left;
+}
+
+.titleRight{
+    float:right;
+}
+
+.paras{
+    width: 796px;
+    /*background-color: aqua;*/
+    margin-top:30px;
+    margin-right: auto;
+    margin-left:auto;
+    overflow: hidden;
+    
+}
+
+.subParas{
+    width: 796px;
+    /*background-color: cyan;*/
+    margin-top:10px;
+    margin-right: auto;
+    margin-left:auto;
+    overflow: hidden;
+    
+}
+
+
+.paraHeading{
+    /*background-color: blue;*/
+    width:190px;
+    float:left;
+    
+}
+
+.paraSubHeading{
+    /*background-color: blue;*/
+    width:190px;
+    float:left;
+    margin-left:101px;
+    
+}
+
+.paraBody{
+    /*background-color: orange;*/
+    width:492px;
+    float:right;
+    
+}
+
+.paraPhotos{
+    /*background-color: pink;*/
+    width:492px;
+    float:right;
+    
+}
+
+h3{
+    
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color:#d4584c;
+    text-align: right;
+}
+
+h4{
+    
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color:#d4584c;
+    text-align: right;
+    line-height: 15px;
+    margin-top:1px;
+}
+
+p{
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 350;
+    color: #234780;
+}
+
+ul{
+    margin-top:10px;
+}
+
+li{
+    font-size: 10px;
+    line-height: 16px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    color: #234780;
+    list-style: circle;
+    margin-left: 20px;
+    margin-top: 5px;
+}
