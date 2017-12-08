@@ -30,6 +30,10 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     background-color: #fff8dc;
+        transition: background-color 1s linear; 
+   -moz-transition: background-color 1s linear;  
+   -webkit-transition: background-color 1s linear; 
+   -ms-transition: background-color 1s linear; 
 }
 ol, ul {
 	list-style: none;
@@ -62,6 +66,11 @@ td.gallerytable{
     background-color: #fff8dc;
     height: 100px;
     margin-top: 25px;
+    
+    transition: background-color 1s linear; 
+   -moz-transition: background-color 1s linear;  
+   -webkit-transition: background-color 1s linear; 
+   -ms-transition: background-color 1s linear; 
 }
 
 
@@ -126,7 +135,6 @@ a.navwords:hover{
     float:right;
 }
 
-<<<<<<< HEAD
 .pictureDiv1{
     width: 796px;
     height:520px;
@@ -152,12 +160,10 @@ a.navwords:hover{
     /*background-color: aqua;*/
 }
 
-=======
->>>>>>> parent of d38b41b... UX case study
 .paras{
     width: 796px;
     /*background-color: aqua;*/
-    margin-top:30px;
+    margin-top:50px;
     margin-right: auto;
     margin-left:auto;
     overflow: hidden;
@@ -211,6 +217,7 @@ h3{
     font-weight: bold;
     color:#d4584c;
     text-align: right;
+    margin-bottom:1px;
 }
 
 h4{
@@ -221,14 +228,14 @@ h4{
     color:#d4584c;
     text-align: right;
     line-height: 15px;
-    margin-top:1px;
+    margin-top:1.5px;
 }
 
 p{
     font-size: 12px;
     line-height: 18px;
     font-family: 'Roboto Mono', monospace;
-    font-weight: 350;
+    font-weight: 450;
     color: #234780;
 }
 
@@ -242,7 +249,71 @@ li{
     font-family: 'Roboto Mono', monospace;
     font-weight: 100;
     color: #234780;
-    list-style: circle;
+    list-style: disc;
     margin-left: 20px;
     margin-top: 5px;
+}
+.subList{
+    margin-left: 40px;
+    list-style: circle;
+}
+
+.indentPara{
+    margin-left: 20px;
+    
+    font-weight: 200;
+    margin-bottom:10px;
+}
+
+.indentPara2{
+    margin-left: 40px;
+    font-weight: 200;
+    margin-bottom:10px;
+    font-size: 10px;
+    margin-top:-10px;
+}
+
+img{
+    margin-top:15px;
+    margin-bottom:25px;
+}
+video{
+    margin-top:15px;
+}
+
+.controls button:hover, .controls button:focus {
+   opacity:1;
+}
+
+.sourcesItems{
+    font-size:8px;
+    line-height: 8px;
+}
+
+.sourceLinks{
+    font-size:8px;
+    line-height: 9px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    color: #234780;
+}
+
+.sourceList{
+    width:600px;
+    margin-left:-100px;
+    margin-top:-1px;
+    list-style: none;
+}
+
+.credits{
+    font-size:10px;
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.paraBold{
+    font-weight: 500;
 }
