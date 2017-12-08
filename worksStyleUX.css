@@ -317,24 +317,3 @@ video{
 .paraBold{
     font-weight: 500;
 }
-
-.prototypeLink:link{
-    font-weight:500;
-    color:#d25950;
-    font-size: 13px;
-}
-
-/* visited link */
-.prototypeLink:visited {
-    color: #dd8377;
-}
-
-
-.prototypeLink:hover {
-    color: #e39789;
-}
-
-/* selected link */
-.prototypeLink:active {
-    color:#e39789;
-}
