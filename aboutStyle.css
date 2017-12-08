@@ -30,11 +30,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     background-color: #d96c61;
-
-    
 }
-
-
 ol, ul {
 	list-style: none;
 }
@@ -66,17 +62,17 @@ tr{
    cursor: default;
 }
 
-.about{
+p#about{
     color:#fffae2;
-    font-size:15px;
+    font-size: 18px;
     font-family: 'Roboto Mono', monospace;
-    font-weight: 500;
+    font-weight: bold;
     text-align: center;
     line-height: 23px;
 }
 
 .aboutBox{
-    width: 50%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
@@ -181,67 +177,4 @@ button.e1, button.e2{
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
     color: #fff9e2;
-}
-
-
-@keyframes fadeIn
-  to { 
-     opacity: 1; }
-
-
-.fade-in {
-  animation: fadeIn 0.1s ease forwards;
-}
-
-@keyframes fadeIn{
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-.fade-in {
-  animation: fadeIn ease .2s;
-  -webkit-animation: fadeIn ease .5s;
-  -moz-animation: fadeIn ease .2s;
-  -o-animation: fadeIn ease .2;
-  -ms-animation: fadeIn ease .2s;
 }
