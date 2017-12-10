@@ -298,6 +298,24 @@ video{
     color: #234780;
 }
 
+.sourceLinks:visited {
+    color: #5b7496;
+}
+
+
+.sourceLinks:hover {
+    color: #97a5af;
+}
+
+/* selected link */
+.sourceLink:active {
+    color:#97a5af;
+}
+
+
+
+
+
 .sourceList{
     width:600px;
     margin-left:-100px;
