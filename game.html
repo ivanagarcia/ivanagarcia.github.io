@@ -7,8 +7,10 @@
 <link href="gameStyles.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Vidaloka" rel="stylesheet">  
     
+    <!-- below is the code for the game. I used a toggle effect, so whenever the user taps on an item, it gives a class and gets rid of it. This 'on' state allows the selected item to have an orange border to make it llok like its selected.-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
+    
 $(document).ready(function(){
     
     $("img.TNhead1").click(function(){
@@ -191,7 +193,7 @@ $(document).ready(function(){
         
     });
     
-    
+    //below are lines for the sound, so whenever a button is clicked then a sound is played.
     
     
     const rollSound = new Audio("audio/buttonSound1.mp3");
@@ -208,7 +210,7 @@ $(document).ready(function(){
 </head>
 
 	<body>
-        
+        <!--styling stuff which is kept consistent in my other pages within my website-->
         <div class="nav">
             <table style="width:84.2%">
               <tr>
@@ -237,14 +239,14 @@ $(document).ready(function(){
         <div class="directions">
             <h4> How to play: Tap on a thumbnail to dress-up Cinnamon. Tap on the thumbnail again to take it off, or tap on the 'Reset' button to get rid of everything on Cinnamon. Save your current outfit to your computer by screenshotting the page! p.s. Sound effects take a while to play :( 
             <br>
-                p.s.s. <a href="https://ivanagarcia.com/workbook">here is the process work for this game!</a></h4>
+                p.s.s. <a href="https://ivanagarcia.com/workbook" class="gamelink">here is the process work for this game!</a></h4>
         </div>
         
         <div class="container">
             <div class ="column1">
                 <div class="title">
                 </div>
-                
+                <!-- all the big images, but are initially hidden, hence the class 'initiallyHidden' and will be shown when the user taps on the corresponding button-->
                 <div class="mainScreenBackground">
                     <img class="TNbg1BIG initiallyHidden bgAcc bigPIC" src="images/game/cinnamonsCloset/background/forestBg.png" width="391px" height="505.7px"/>
                     
@@ -313,7 +315,7 @@ $(document).ready(function(){
                         
                     </div>
                 </div>  
-                
+                <!-- next are the thumbnails which act as buttons for the users-->
                 <div class="glassesRow">
                     <div class="titleBar">
                         <div class="iconTN">

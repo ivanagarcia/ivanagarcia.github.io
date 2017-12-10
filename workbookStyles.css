@@ -184,7 +184,7 @@ img.entry{
 }
 
 .bullet{
-    list-style: circle;
+    list-style: none;
     margin-left: 30px;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
@@ -194,7 +194,7 @@ img.entry{
     line-height: 23px;
 }
 
-a.anchor{
+a.anchor, a.anchorTOP{
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
     font-size: 16px;
@@ -212,4 +212,32 @@ a.gamelink{
 
 a.anchorHEADING{
     text-decoration: none;
+}
+
+a.bullet:visited {
+    color: #5b7496;
+}
+
+
+a.bullet:hover {
+    color: #97a5af;
+}
+
+/* selected link */
+a.bullet:active {
+    color:#97a5af;
+}
+
+a.anchor:visited {
+    color: #dd8377;
+}
+
+
+a.anchor, a.anchorTOP:hover {
+    color: #e39789;
+}
+
+/* selected link */
+a.anchor, a.anchorTOP:active {
+    color:#e39789;
 }

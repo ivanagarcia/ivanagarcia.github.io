@@ -99,7 +99,7 @@ a.navwords:hover{
 }
 
 .container{
-    background-color: aqua;
+    background-color: #fff8dc;
     width: 950px;
     height:800px;
     margin-top: 20px;
@@ -242,7 +242,7 @@ a.navwords:hover{
     
 }
 
-
+/*user feedback with the hover state*/
 .resetButton:hover{
     background-color: #df8c87;
     border: none;
@@ -343,6 +343,32 @@ h4{
     line-height: 30px;
 }
 
+a.gamelink{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 14px;
+    color: #234780;
+    line-height: 30px;
+}
+
+a.gamelink:visited {
+    color: #5b7496;
+}
+
+
+a.gamelink:hover {
+    color: #97a5af;
+}
+
+/* selected link */
+a.gamelink:active {
+    color:#97a5af;
+}
+
+
+
+
+
 .iconTN{
     /*background-color: aquamarine;*/
     width:30px;
@@ -357,13 +383,13 @@ h4{
     margin-right: 23px;
     border: 5px solid #f4f3ec;
 }
-
+/*user feedback with the hover state*/
 .smallTNh:hover, .smallTNe:hover, .smallTNc:hover, .smallTNs:hover, .smallTNb:hover{
     margin-right: 23px;
     border: 5px solid #df8c87;
 }
 
-
+/*initially hides the big images until they are tapped on (using the thumbnail buttons)*/
 img.initiallyHidden{
     display: none;
 }
@@ -374,7 +400,7 @@ img.initiallyHidden{
     border: 5px solid #f5f2de;
 }
 
-
+/*more user feedback with the thick orange border*/
 .selectedHEAD{
     margin-right: 23px;
     border: 5px solid #d4584c;
@@ -401,3 +427,4 @@ img.initiallyHidden{
     margin-right: 23px;
     border: 5px solid #d4584c;
 }
+
