@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>ivana garcia | works – Timeline Of Houses</title>
+<link href="worksStyle.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Vidaloka" rel="stylesheet">   
+    
+<script src="scripts/jquery.js"></script>
+<script src="scripts/application.js"></script>
+
+	</head>
+
+	<body>
+        <div class="nav">
+            <table style="width:84.2%">
+              <tr>
+                <th><a href="index.html"><img src="images/icons-darkblue-home.svg" width="55px" height="55px"/></a></th>
+                <th><a href="about.html"><img src="images/icons-darkblue-about.svg" width="55px" height="55px"/></a></th>
+                <th><a href="works.html"><img src="images/icons-darkblue-works.svg" width="55px" height="55px"/></a></th>
+                <th><a href="#fm"><img src="images/icons-darkblue-resume.svg" width="55px" height="55px"/></a></th>
+                <th><a href="contact.html"><img src="images/icons-darkblue-chat.svg" width="55px" height="55px"/></a></th>
+                  
+              </tr>
+                
+              <tr>
+                <td><a href="index.html" class="navwords"> home</a></td>
+                <td><a href="about.html" class="navwords"> about</a></td>
+                <td><a href="works.html" class="navwords" style=" border-bottom: 5px solid #d96c61;">works</a></td>
+                <td><a href="#fm" class="navwords"> resume</a></td>
+                <td><a href="contact.html" class="navwords"> chat</a></td>
+              </tr>
+            </table>
+        </div>
+        
+        <div>
+            <h2>ivana garcia</h2>
+        </div>
+        
+        
+        <div class="content">
+            
+            <div class="gallery">
+                <img src="images/gallery/housesTimeline/housesTimeline.jpg" width="850" height="478"/>
+                <!--<div class="previews"> 
+                    <a href="#" class="selected" data-full=iframe src="https://player.vimeo.com/video/246386285?color=d25950&title=0&byline=0&portrait=0" width="492" height="277" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                       
+                       
+                       ><img class="small" src="images/gallery/happyTrails/1small.jpg"/></a> 
+                    <a href="#" data-full="images/gallery/cosmetics/happyTrails/2back.jpg"><img class="small" src="images/gallery/happyTrails/2small.jpg" /></a> 
+                   
+                </div>-->
+                    
+                </div>
+                
+           
+            
+
+            <div class="words">
+                <h3>Time I've Spent In Houses</h3>
+                <p>An inforgraphic of all the houses I've lived in, from my birth till 2017.</p> 
+                <p>Each illustration represents the most memorable thing about the location.</p>
+            </div>
+            
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+                <script src="fancybox/jquery.fancybox.js?v=2.1.4"></script> 
+                <script>
+                  $(document).ready(function(){
+                    $('a').click(function(event){
+                    
+                      
+                      var largeImage = $(this).attr('data-full');
+                      $('.selected').removeClass();
+                        
+                      $(this).addClass('selected');
+                        
+                      $('.full img').hide();
+                      $('.full img').attr('src', largeImage);
+                      $('.full img').fadeIn();
+
+
+                    }); // closing the listening on a click
+                    $('.full img').on('click', function(){
+                        event.preventDefault();
+                      var modalImage = $(this).attr('src');
+                      $.fancybox.open(modalImage);
+                    });
+                  }); //closing our doc ready
+                  </script>
+                <script type="text/javascript">
+
+                  var _gaq = _gaq || [];
+                  _gaq.push(['_setAccount', 'UA-36251023-1']);
+                  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                  _gaq.push(['_trackPageview']);
+
+                  (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                  })();
+
+                </script>
+        </div>    
+          
+        
+
+	
+	
+	
+    </body>
+</html>
