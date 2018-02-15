@@ -163,6 +163,26 @@ button.e1, button.e2{
     cursor: pointer;
 }
 
+.pLinks:link{
+    text-decoration: underline;
+    color: #25487e;
+}
+
+
+/* visited link */
+.pLinks:visited {
+    color: #695674;
+}
+
+
+.pLinks:hover {
+    color: #4e5178;
+}
+
+/* selected link */
+.pLinks:active {
+    color:#535277;
+}
 
 
 #panel, #flip {
