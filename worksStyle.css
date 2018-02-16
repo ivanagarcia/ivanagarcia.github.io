@@ -181,6 +181,7 @@ p{
     width: 1222px;
     margin-right: auto;
     margin-left: auto;
+    
 }
 
 .galleryPic{
@@ -188,6 +189,7 @@ p{
     margin-bottom: 5px;
     opacity: 1;
     border-bottom: 5px solid #fff8dc;
+    
 }
 
 .galleryPic:hover{
