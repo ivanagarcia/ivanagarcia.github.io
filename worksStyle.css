@@ -222,6 +222,7 @@ width:750px;
 }
 .gallery .previews a {
 border-bottom: 5px solid #fff8dc;
+height: 63px;
 }
 .previews a:hover,  .previews a.selected {
 border-bottom: 5px solid #d4584c;
