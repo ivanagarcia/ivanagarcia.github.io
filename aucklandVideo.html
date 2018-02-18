@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>ivana garcia | Auckland: City Of Sunlight</title>
+<link href="worksStyle.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Vidaloka" rel="stylesheet">   
+    
+<script src="scripts/jquery.js"></script>
+<script src="scripts/application.js"></script>
+
+	</head>
+
+	<body>
+        <div class="nav">
+            <table style="width:84.2%">
+              <tr>
+                <th><a href="index.html"><img src="images/icons-darkblue-home.svg" width="55px" height="55px"/></a></th>
+                <th><a href="about.html"><img src="images/icons-darkblue-about.svg" width="55px" height="55px"/></a></th>
+                <th><a href="works.html"><img src="images/icons-darkblue-works.svg" width="55px" height="55px"/></a></th>
+                <th><a href="resume.html"><img src="images/icons-darkblue-resume.svg" width="55px" height="55px"/></a></th>
+                <th><a href="contact.html"><img src="images/icons-darkblue-chat.svg" width="55px" height="55px"/></a></th>
+                  
+              </tr>
+                
+              <tr>
+                <td><a href="index.html" class="navwords"> home</a></td>
+                <td><a href="about.html" class="navwords"> about</a></td>
+                <td><a href="works.html" class="navwords" style=" border-bottom: 5px solid #d96c61;">works</a></td>
+                <td><a href="resume.html" class="navwords"> resume</a></td>
+                <td><a href="contact.html" class="navwords"> chat</a></td>
+              </tr>
+            </table>
+        </div>
+        
+        <div>
+            <h2>ivana garcia</h2>
+        </div>
+        
+        
+        <div class="content">
+            <div class="gallery">
+            
+                <!--<div class="previews"> 
+                    <a href="#" class="selected" data-full=iframe src="https://player.vimeo.com/video/246386285?color=d25950&title=0&byline=0&portrait=0" width="492" height="277" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                       
+                       
+                       ><img class="small" src="images/gallery/happyTrails/1small.jpg"/></a> 
+                    <a href="#" data-full="images/gallery/cosmetics/happyTrails/2back.jpg"><img class="small" src="images/gallery/happyTrails/2small.jpg" /></a> 
+                   
+                </div>-->
+
+                <div class="full">
+                    <iframe src="https://player.vimeo.com/video/246559385?color=d25950&title=0&byline=0&portrait=0" width="850" height="638" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                
+                </div>
+                
+            </div>
+            
+
+            <div class="words">
+                <h3>'Auckland: City of Sunlight' (2017)</h3>
+                <p>Studying abroad in Vermont, USA, I wanted to create a video that put all the skills I learned about 3D camera, effects and Photoshop tools into action and put it into a video that showcased the place I grew up in: Auckland.</p> 
+
+                <p>The audio was taken from a 1963 travel video, and the collage images are taken from all over the web.</p>
+              
+            </div>
+            
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+                <script src="fancybox/jquery.fancybox.js?v=2.1.4"></script> 
+                <script>
+                  $(document).ready(function(){
+                    $('a').click(function(event){
+                    
+                      
+                      var largeImage = $(this).attr('data-full');
+                      $('.selected').removeClass();
+                        
+                      $(this).addClass('selected');
+                        
+                      $('.full img').hide();
+                      $('.full img').attr('src', largeImage);
+                      $('.full img').fadeIn();
+
+
+                    }); // closing the listening on a click
+                    $('.full img').on('click', function(){
+                        event.preventDefault();
+                      var modalImage = $(this).attr('src');
+                      $.fancybox.open(modalImage);
+                    });
+                  }); //closing our doc ready
+                  </script>
+                <script type="text/javascript">
+
+                  var _gaq = _gaq || [];
+                  _gaq.push(['_setAccount', 'UA-36251023-1']);
+                  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                  _gaq.push(['_trackPageview']);
+
+                  (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                  })();
+
+                </script>
+        </div>    
+          
+        
+
+	
+	
+	
+    </body>
+</html>
