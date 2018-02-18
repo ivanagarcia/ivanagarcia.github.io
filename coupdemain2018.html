@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>ivana garcia | Boredom Bay</title>
+<link href="worksStyle.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Vidaloka" rel="stylesheet">   
+    
+<script src="scripts/jquery.js"></script>
+<script src="scripts/application.js"></script>
+
+	</head>
+
+	<body>
+        <div class="nav">
+            <table style="width:84.2%">
+              <tr>
+                <th><a href="index.html"><img src="images/icons-darkblue-home.svg" width="55px" height="55px"/></a></th>
+                <th><a href="about.html"><img src="images/icons-darkblue-about.svg" width="55px" height="55px"/></a></th>
+                <th><a href="works.html"><img src="images/icons-darkblue-works.svg" width="55px" height="55px"/></a></th>
+                <th><a href="resume.html"><img src="images/icons-darkblue-resume.svg" width="55px" height="55px"/></a></th>
+                <th><a href="contact.html"><img src="images/icons-darkblue-chat.svg" width="55px" height="55px"/></a></th>
+                  
+              </tr>
+                
+              <tr>
+                <td><a href="index.html" class="navwords"> home</a></td>
+                <td><a href="about.html" class="navwords"> about</a></td>
+                <td><a href="works.html" class="navwords" style=" border-bottom: 5px solid #d96c61;">works</a></td>
+                <td><a href="resume.html" class="navwords"> resume</a></td>
+                <td><a href="contact.html" class="navwords"> chat</a></td>
+              </tr>
+            </table>
+        </div>
+        
+        <div>
+            <h2>ivana garcia</h2>
+        </div>
+        
+        
+        <div class="content">
+            <div class="gallery">
+            
+                <div class="previews"> 
+                    <a href="#" class="selected" data-full="images/gallery/cdm/big1.jpg"><img class="small" src="images/gallery/cdm/small1.jpg"/></a> 
+                    <a href="#" data-full="images/gallery/cdm/big2.jpg"><img class="small" src="images/gallery/cdm/small2.jpg" /></a> 
+                    <a href="#" data-full="images/gallery/cdm/big3.jpg"><img class="small" src="images/gallery/cdm/small3.jpg"/></a> 
+                    <a href="#" data-full="images/gallery/cdm/big4.jpg"><img class="small" src="images/gallery/cdm/small4.jpg" /></a> 
+                    <a href="#" data-full="images/gallery/cdm/big5.jpg"><img class="small" src="images/gallery/cdm/small5.jpg" /></a> 
+                    <a href="#" data-full="images/gallery/cdm/big6.jpg"><img class="small" src="images/gallery/cdm/small6.jpg" /></a> 
+                </div>
+
+                <div class="full"> 
+                    <!-- first image is viewable to start --> 
+                    <img src="images/gallery/cdm/big1.jpg" /> 
+                </div>
+                
+            </div>
+            
+
+            <div class="words">
+                <h3>Coup De Main Magazine (2015-)</h3>
+                
+
+                <p>Being the Graphic Designer for the online Magazine, 'Coup De Main', I've had to design their online magazine, illustrate, and put together some compositions by the computer and by hand (through collage.)</p>
+                
+                <p>This also involves listening to the artists' music and translating it into something visual. <a href="http://www.coupdemainmagazine.com" class="prototypeLink" target="_blank">Click here to check out Coup De Main!</a></p> 
+            </div>
+            
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+                <script src="fancybox/jquery.fancybox.js?v=2.1.4"></script> 
+                <script>
+                  $(document).ready(function(){
+                    $('a').click(function(event){
+                    
+                      
+                      var largeImage = $(this).attr('data-full');
+                      $('.selected').removeClass();
+                        
+                      $(this).addClass('selected');
+                        
+                      $('.full img').hide();
+                      $('.full img').attr('src', largeImage);
+                      $('.full img').fadeIn();
+
+
+                    }); // closing the listening on a click
+                    $('.full img').on('click', function(){
+                        event.preventDefault();
+                      var modalImage = $(this).attr('src');
+                      $.fancybox.open(modalImage);
+                    });
+                  }); //closing our doc ready
+                  </script>
+                <script type="text/javascript">
+
+                  var _gaq = _gaq || [];
+                  _gaq.push(['_setAccount', 'UA-36251023-1']);
+                  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                  _gaq.push(['_trackPageview']);
+
+                  (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                  })();
+
+                </script>
+        </div>    
+          
+        
+
+	
+	
+	
+    </body>
+</html>
