@@ -147,6 +147,19 @@ a.navwords:hover{
     /*background-color: aqua;*/
 }
 
+.pictureDivUX{
+    width: 800px;
+    height:450px;
+    margin-top:-30px;
+    margin-right: auto;
+    margin-left:auto;
+    background-color: aquamarine;
+
+    
+    /*background-color: aqua;*/
+}
+
+
 .pictureDiv2{
     width: 796px;
     height:531px;
