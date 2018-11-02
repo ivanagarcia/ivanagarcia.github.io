@@ -62,8 +62,13 @@ td.gallerytable{
     background-color: #fff8dc;
     height: 100px;
     margin-top: 25px;
+    width: 84.2%;
+    max-width: 1080px;
 }
 
+tr, th{
+    width: 25%;
+}
 
 tr{
     text-align: center;

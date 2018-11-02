@@ -66,12 +66,19 @@ td.gallerytable{
     background-color: #fff8dc;
     height: 100px;
     margin-top: 25px;
+    width: 84.2%;
+    max-width: 1080px;
     
     transition: background-color 1s linear; 
    -moz-transition: background-color 1s linear;  
    -webkit-transition: background-color 1s linear; 
-   -ms-transition: background-color 1s linear; 
+   -ms-transition: background-color 1s linear;   
 }
+
+tr, th{
+    width: 25%;
+}
+
 
 
 tr{

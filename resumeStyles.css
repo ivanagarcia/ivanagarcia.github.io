@@ -62,12 +62,19 @@ td.gallerytable{
     background-color: #f1cbc8;
     height: 100px;
     margin-top: 25px;
+    width: 84.2%;
+    max-width: 1080px;
+}
+
+tr, th{
+    width: 25%;
 }
 
 
 tr{
     text-align: center;
 }
+
 
 h2{
     font-family: 'Vidaloka', serif;
@@ -107,7 +114,8 @@ a.navwords:hover{
 
 .main{
     /*background-color: pink;*/
-    width: 796px;
+    width: 60.2%;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 }

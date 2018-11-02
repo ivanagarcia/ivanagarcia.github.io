@@ -46,7 +46,7 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
+.nav table {
 	border-collapse: collapse;
 	border-spacing: 0;
     margin-left: auto;
@@ -54,6 +54,12 @@ table {
     background-color: #d96c61;
     height: 100px;
     margin-top: 25px;
+    width: 84.2%;
+    max-width: 1080px;
+}
+
+tr, th{
+    width: 25%;
 }
 
 
